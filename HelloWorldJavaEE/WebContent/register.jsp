@@ -17,6 +17,7 @@
 			<option>French</option>
 		</select>
 		<input type = "submit" value = "Call Servlet">
+		<a href="<%=request.getContextPath()%>/login.jsp">Login Page Here</a>
 	</form>
 </body>
 </html>
