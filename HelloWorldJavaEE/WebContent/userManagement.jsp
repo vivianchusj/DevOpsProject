@@ -22,6 +22,9 @@
 				<a href="<%=request.getContextPath()%>/register.jsp"
 					class="btn btn-success">Add New User</a>
 			</div>
+				<div class="container text-right">
+					<a href="/UserLogout" class="btn btn-dark">Logout</a>
+			</div>
 			<br>
 			<!-- Create a table to list out all current users information -->
 			<table class="table">
