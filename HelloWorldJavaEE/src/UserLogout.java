@@ -3,6 +3,8 @@
 
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -32,15 +34,30 @@ public class UserLogout extends HttpServlet {
 		
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
-		
-		 HttpSession session = request.getSession(false);
-	        if (session != null) {
-	            session.removeAttribute("user");
-	             
-	            RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
-	            dispatcher.forward(request, response);
-	        }
-	}
+
+		// Get the print writer object to write into the response
+        PrintWriter out = response.getWriter();
+  
+        // Set the content type of response to "text/html"
+        response.setContentType("text/html");
+  
+        // For understanding purpose, print the session object in the console before
+        // invalidating the session.
+        System.out.println("Session before invalidate: "+ request.getSession(false));
+  
+        // Invalidate the session.
+        request.getSession(false).invalidate();
+  
+        // Print the session object in the console after invalidating the session.
+        System.out.println("Session after invalidate: "+ request.getSession(false));
+  
+      
+        response.sendRedirect("http://localhost:8090/HelloWorldJavaEE/login.jsp");
+	
+        
+    }
+	   
+	
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
@@ -48,6 +65,8 @@ public class UserLogout extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
+
+	
 	}
 
 }
