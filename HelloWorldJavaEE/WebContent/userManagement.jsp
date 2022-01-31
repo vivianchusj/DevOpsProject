@@ -24,7 +24,7 @@
 			</div>
 				<div class="container text-right">
 					<a href="/UserLogout" class="btn btn-dark">Logout</a>
-			</div>
+			</div>   
 			<br>
 			<!-- Create a table to list out all current users information -->
 			<table class="table">

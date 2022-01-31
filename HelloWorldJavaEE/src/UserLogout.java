@@ -38,7 +38,7 @@ public class UserLogout extends HttpServlet {
 	            session.removeAttribute("user");
 	             
 	            RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
-	            dispatcher.forward(request, response);
+	            dispatcher.forward(request, response);   
 	        }
 	}
 
