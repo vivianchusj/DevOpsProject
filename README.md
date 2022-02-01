@@ -5,5 +5,6 @@ This project is a school project that aims to assess us to make use of continuou
 ## Features
 - Sign up functionality
 - Login functionality using email and password authentication
+- Welcome feature
 - Add, edit and delete a User in the database
 - Logout functionality
