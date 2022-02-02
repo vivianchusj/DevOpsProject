@@ -33,7 +33,7 @@
 						<th>Name</th>
 						<th>Password</th>
 						<th>Email</th>
-						<th>Language</th>
+						<th>Language</th> 
 						<th>Actions</th>
 					</tr>
 				</thead>
