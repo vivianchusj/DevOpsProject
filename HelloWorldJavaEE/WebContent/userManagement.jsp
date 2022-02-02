@@ -28,7 +28,7 @@
 			<br>
 			<!-- Create a table to list out all current users information -->
 			<table class="table">
-				<thead>
+				<thead> 
 					<tr>
 						<th>Name</th>
 						<th>Password</th>
