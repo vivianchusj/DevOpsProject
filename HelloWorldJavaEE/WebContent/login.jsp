@@ -13,6 +13,6 @@
 		Enter your password: <input type = "password" name = "password" size = 20>
 		<input type = "submit" value = "Login">
 	</form>
-			<a href="<%=request.getContextPath()%>/register.jsp">Register Page Here</a>
+			<a href="<%=request.getContextPath()%>/register.jsp">Register Page Here</a> 
 </body>
 </html>
