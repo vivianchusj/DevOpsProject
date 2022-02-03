@@ -52,7 +52,7 @@ public class UserLogout extends HttpServlet {
         System.out.println("Session after invalidate: "+ request.getSession(false));
   
       
-        response.sendRedirect("http://localhost:8090/HelloWorldJavaEE/login.jsp");
+        response.sendRedirect("http://localhost:8090/HelloWorldJavaEE/login.jsp"); 
 	
         
     }

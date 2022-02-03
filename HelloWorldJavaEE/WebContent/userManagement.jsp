@@ -23,7 +23,7 @@
 					class="btn btn-success">Add New User</a>
 			</div>
 				<div class="container text-right">
-					<a href="<%=request.getContextPath()%>/UserLogout" class="btn btn-dark">Logout</a>
+					<a href="<%=request.getContextPath()%>/UserLogout" class="btn btn-dark">Logout</a> 
 			</div>
 			<br>
 			<!-- Create a table to list out all current users information -->

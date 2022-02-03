@@ -71,6 +71,7 @@ public class RegisterServlet extends HttpServlet {
 		PrintWriter writer = response.getWriter();
 		writer.println("<h1>" + "You have successfully registered an account!" +
 		"</h1>");
+        response.sendRedirect("http://localhost:8088/HelloWorldJavaEE/login.jsp");
 		writer.close();
 		}
 		}
