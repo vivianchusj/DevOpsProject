@@ -16,7 +16,7 @@
 			<option>Spanish</option>
 			<option>French</option>
 			<option>Chinese</option>
-			<option>German </option>
+			<option>German </option> 
 		</select>
 		<input type = "submit" value = "Call Servlet">
 		<a href="<%=request.getContextPath()%>/login.jsp">Login Page Here</a>
