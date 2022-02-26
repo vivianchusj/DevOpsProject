@@ -15,7 +15,8 @@ Etc.) -->
 		Enter your name: <input type="text" name="yourName" size="20">
 		<!-- Implement submit button with type = submit to perform the request when clicked -->
 		<input type="submit" value="Call Servlet" />
+		 <a class="link" href="<%=request.getContextPath()%>/register.jsp">Go to Register</a>
 	</form>
-	  <a class="link" href="<%=request.getContextPath()%>/register.jsp">Go to Register</a>
+	 
 </body>
 </html>
