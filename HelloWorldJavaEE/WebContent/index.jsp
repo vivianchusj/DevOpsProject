@@ -16,5 +16,6 @@ Etc.) -->
 		<!-- Implement submit button with type = submit to perform the request when clicked -->
 		<input type="submit" value="Call Servlet" />
 	</form>
+	  <a class="link" href="<%=request.getContextPath()%>/register.jsp">Go to Register</a>
 </body>
 </html>
